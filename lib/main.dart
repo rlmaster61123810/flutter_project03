@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
-      home: MyHomePage(title: 'DOG RANK'),
+      home: MyHomePage(title: 'อาหารวันนี้'),
     );
   }
 }
@@ -49,9 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
             },
             child: Card(
               child: ListTile(
-                leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p01.jpg")),
-                title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-                subtitle: Text("class 1", style: TextStyle(color: Colors.white)),
+                leading: CircleAvatar(
+                    backgroundImage: AssetImage("assets/images/p01.jpg")),
+                title:
+                    Text("ต้มจืดลูกรอก", style: TextStyle(color: Colors.white)),
+                subtitle:
+                    Text("คลิกที่นี่", style: TextStyle(color: Colors.white)),
                 trailing: Wrap(children: [
                   Icon(
                     Icons.star,
@@ -72,9 +75,12 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p02.png")),
-              title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-              subtitle: Text("class 2", style: TextStyle(color: Colors.white)),
+              leading: CircleAvatar(
+                  backgroundImage: AssetImage("assets/images/p02.png")),
+              title: Text("แกงอ่อมไก่เมือง",
+                  style: TextStyle(color: Colors.white)),
+              subtitle:
+                  Text("คลิกที่นี่", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
                 Icon(
                   Icons.star,
@@ -98,9 +104,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p03.png")),
-              title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-              subtitle: Text("class 3", style: TextStyle(color: Colors.white)),
+              leading: CircleAvatar(
+                  backgroundImage: AssetImage("assets/images/p03.png")),
+              title: Text("หล่นปู", style: TextStyle(color: Colors.white)),
+              subtitle:
+                  Text("คลิกที่นี่", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
                 Icon(
                   Icons.star,
@@ -128,9 +136,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p04.png")),
-              title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-              subtitle: Text("class 4", style: TextStyle(color: Colors.white)),
+              leading: CircleAvatar(
+                  backgroundImage: AssetImage("assets/images/p04.png")),
+              title: Text("ผัดผักรวม", style: TextStyle(color: Colors.white)),
+              subtitle:
+                  Text("คลิกที่นี่", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
                 Icon(
                   Icons.star,
@@ -164,7 +174,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-              subtitle: Text("class 5", style: TextStyle(color: Colors.white)),
+              subtitle:
+                  Text("คลิกที่นี่", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
                 Icon(
                   Icons.star,
