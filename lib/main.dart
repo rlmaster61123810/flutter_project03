@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project03/screen/detail_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,33 +39,40 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         padding: EdgeInsets.all(5),
         children: [
-          Card(
-            child: ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/p01.jpg")),
-              title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
-              subtitle: Text("class 1", style: TextStyle(color: Colors.white)),
-              trailing: Wrap(children: [
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
+          InkWell(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(),
                 ),
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                ),
-                Icon(
-                  Icons.star,
-                  color: Colors.yellow,
-                ),
-              ]),
-              tileColor: Colors.indigo[900],
+              );
+            },
+            child: Card(
+              child: ListTile(
+                leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p01.jpg")),
+                title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
+                subtitle: Text("class 1", style: TextStyle(color: Colors.white)),
+                trailing: Wrap(children: [
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow,
+                  ),
+                  Icon(
+                    Icons.star,
+                    color: Colors.yellow,
+                  ),
+                ]),
+                tileColor: Colors.indigo[900],
+              ),
             ),
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/p02.png")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p02.png")),
               title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
               subtitle: Text("class 2", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
@@ -90,8 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/p03.png")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p03.png")),
               title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
               subtitle: Text("class 3", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
@@ -121,8 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Card(
             child: ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: AssetImage("assets/images/p04.png")),
+              leading: CircleAvatar(backgroundImage: AssetImage("assets/images/p04.png")),
               title: Text("Dog Rank", style: TextStyle(color: Colors.white)),
               subtitle: Text("class 4", style: TextStyle(color: Colors.white)),
               trailing: Wrap(children: [
